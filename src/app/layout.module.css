@@ -1,0 +1,15 @@
+.Navbar {
+    background-color: #0f1a2e;
+    color: white;
+    min-width: 300px !important;
+
+    background-color: #2f3d57;
+    /* Dark blue */
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.Tooltip {
+    background-color: #474747;
+}

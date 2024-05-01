@@ -1,0 +1,22 @@
+.modal-backdrop {
+  background-color: #000000;
+}
+
+.modal-content {
+  background-color: #212529;
+  color: #fff;
+}
+
+.modal-header {
+  background-color: #343a40;
+  border-bottom: none;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+.modal-footer {
+  background-color: #343a40;
+  border-top: none;
+}

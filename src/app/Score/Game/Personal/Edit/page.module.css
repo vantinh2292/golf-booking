@@ -1,0 +1,20 @@
+.parent_divider {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.divider {
+    border-bottom: 1px solid #3D4658;
+    /* Set border color */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.custom_select {
+    font-weight: bold;
+    color: red !important;
+    text-align: center;
+    width: 100%;
+}

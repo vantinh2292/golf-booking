@@ -1,0 +1,690 @@
+@import "src/@fuse/scss/fuse";
+
+
+.bang {
+
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pc {
+  width: 100% !important;
+}
+
+.mobile {
+  width: 100% !important
+}
+
+.pc table {
+  border: 0.3px solid #aaa5a5;
+  border-collapse: collapse;
+}
+
+.bang table {
+  border: 0.3px solid #aaa5a5;
+  border-collapse: collapse;
+}
+
+.pc td,
+.pc th {
+  border: 0.3px solid #aaa5a5;
+  padding: 5px !important;
+}
+
+//   .pc tr:hover {background-color: #ddd;font-weight: bold;}
+.pc th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center !important;
+  background-color: #0a58c1 !important;
+  color: white;
+}
+
+.pc tr:hover {
+  background-color: black;
+  font-weight: bold;
+}
+
+.mobile td,
+.mobile th {
+  border: 1px #67ABDE;
+  padding: 5px !important;
+}
+
+.bang td,
+.bang th {
+  border: 1px solid #67ABDE;
+  padding: 5px !important;
+}
+
+.mobile tr:hover {
+  background-color: black;
+  font-weight: bold;
+}
+
+.mobile th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center !important;
+  background-color: #0a58c1;
+  color: white;
+}
+
+.bang tr:hover {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.bang th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center !important;
+  background-color: #0a58c1;
+  color: white;
+}
+
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+.mat-sort-header-container {
+  display: inline-flex !important;
+  cursor: pointer;
+  align-items: center;
+}
+
+
+.pcpt,
+.bangpt,
+.mobilept {
+  width: 100% !important;
+
+  display: none;
+}
+
+.pc,
+.bang,
+.mobile {
+  width: 100% !important;
+  // color:#fff;
+  display: none;
+
+}
+
+.pctieude,
+.bangtieude,
+.mobiletieude {
+  display: none;
+}
+
+
+
+.khonglichpc,
+.khonglichmobile {
+  display: none;
+}
+
+.pctimkiem,
+.mobiletimkiem {
+  display: none;
+}
+
+
+@media only screen and (max-width:813px) {
+  .mobile {
+    display: block;
+    padding: 5px;
+    font-family: Tahoma;
+
+
+  }
+
+
+  .mobiletimkiem {
+    display: block;
+  }
+
+
+  .table-sticky {
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    th:after,
+    th:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    th:before {
+      top: -1px;
+      // border-top: 1px solid #c0c0c0;
+    }
+
+    th:after {
+      bottom: -2px;
+      // border-bottom: 2px solid #c0c0c0;
+    }
+
+    .mobile table,
+    .mobile th,
+    .mobile td {
+      border: 0.1px solid #67ABDE !important;
+    }
+  }
+
+  .navbar {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+
+  .navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .top1 {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+  }
+
+
+}
+
+
+@media only screen and (min-width:814px) and (max-width:1023px) {
+  .table-sticky {
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    th:after,
+    th:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    th:before {
+      top: -1px;
+      // border-top: 1px solid #c0c0c0;
+    }
+
+    th:after {
+      bottom: -2px;
+      // border-bottom: 2px solid #c0c0c0;
+    }
+  }
+
+  .bang {
+    display: block;
+
+  }
+
+  .bang table {
+    border: 0.3px solid #aaa5a5;
+    border-collapse: collapse;
+  }
+
+  .bangpt {
+    display: block;
+  }
+
+  .bangtieude {
+    display: block;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .table-sticky {
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    th:after,
+    th:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+    }
+
+    th:before {
+      top: -1px;
+      // border-top: 1px solid #c0c0c0;
+    }
+
+    th:after {
+      bottom: -2px;
+      // border-bottom: 2px solid #c0c0c0;
+    }
+  }
+
+  .pc {
+    display: table !important;
+  }
+
+  .khonglichpc {
+    display: block;
+  }
+
+  .pcpt {
+    display: block;
+  }
+
+  .pctieude {
+    display: block;
+  }
+
+  .pctimkiem {
+    display: block;
+  }
+
+  .pc table,
+  .pc th,
+  .pc td {
+    border: 0.3px solid #aaa5a5 !important;
+  }
+
+  .top {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    outline: none;
+  }
+}
+
+.container_swap {
+
+  width: 240px;
+
+}
+
+.div_left {
+
+  width: 120px;
+
+  float: left;
+
+  text-align: left;
+
+}
+
+.div_right {
+
+  width: 120px;
+
+  float: left;
+
+  text-align: left;
+
+}
+
+
+//loading
+
+$font: 'Montserrat', sans-serif;
+
+$blue: #4285F4;
+$red: #DB4437;
+$yellow: #F4B400;
+$green: #0F9D58;
+$colors-list: $blue $red $yellow $green;
+
+.google-loader {
+  display: block;
+
+  span {
+    display: inline-block;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  @each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    $t: $i * -0.25;
+
+    span:nth-child(#{$i}) {
+      background: $current-color;
+      animation: move 1s ease-in-out (#{$t}s) infinite alternate;
+    }
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
+
+h1 {
+  font-family: $font;
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: -8px;
+  margin-top: 0;
+
+  span {
+    &:first-child {
+      color: $blue;
+    }
+
+    &:nth-child(2) {
+      color: $red;
+    }
+
+    &:nth-child(3) {
+      color: $yellow;
+    }
+
+    &:nth-child(4) {
+      color: $blue;
+    }
+
+    &:nth-child(5) {
+      color: $green;
+    }
+
+    &:nth-child(6) {
+      color: $green;
+    }
+
+    &:last-child {
+      color: $red;
+      transform: rotate(-20deg);
+      display: inline-block;
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+//button tim kiem dep
+
+body {
+  background: #e0e5ec;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  color: #353535;
+  font-size: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+}
+
+.custom-btn {
+  width: 113px;
+  height: 35px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+/* 1 */
+.btn-1 {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 126, 251, 1) 100%);
+  border: none;
+}
+
+.btn-1:hover {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
+}
+
+
+///mobile css new
+
+.phone-mobile {
+  display: none;
+}
+
+.giuseart-nav {
+  position: fixed;
+  left: 13px;
+  background: #fff;
+  border-radius: 5px;
+  width: auto;
+  z-index: 150;
+  bottom: 50px;
+  padding: 10px 0;
+  border: 1px solid #f2f2f2;
+}
+
+.giuseart-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.giuseart-nav ul li {
+  list-style: none !important;
+}
+
+.giuseart-nav ul>li a {
+  border: none;
+  padding: 3px;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  color: #515151;
+  font-weight: 700;
+  max-width: 72.19px;
+  max-height: 54px;
+  text-decoration: none;
+}
+
+.giuseart-nav ul>li .chat_animation {
+  display: none
+}
+
+.giuseart-nav ul>li a i.ticon-heart {
+  background: url(https://icons.iconarchive.com/icons/treetog/junior/256/folder-url-history-icon.png) no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.giuseart-nav ul>li a i.ticon-zalo-circle2 {
+  background: url(https://icons.iconarchive.com/icons/pelfusion/long-shadow-ios7/256/Problem-icon.png) no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.giuseart-nav li .button {
+  background: transparent;
+}
+
+.giuseart-nav ul>li a i {
+  width: 33px;
+  height: 33px;
+  display: block;
+  margin: auto;
+}
+
+.giuseart-nav ul li .button .btn_phone_txt {
+  position: relative;
+  top: 35px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.giuseart-nav ul li .button .phone_animation i {
+  display: inline-block;
+  width: 27px;
+  font-size: 26px;
+  margin-top: 12px;
+}
+
+.giuseart-nav ul>li a.chat_animation svg {
+  margin: -13px 0 -20px;
+}
+
+.giuseart-nav ul>li a i.ticon-messenger {
+  background: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-12/256/SMS-Message-icon.png) no-repeat;
+  background-size: contain;
+  width: 36px;
+  height: 36px;
+  display: block;
+}
+
+.giuseart-nav ul li .button .phone_animation i {
+  display: inline-block;
+  width: 27px;
+  font-size: 26px;
+  margin-top: 12px;
+}
+
+.giuseart-nav ul>li a i.ticon-chat-sms {
+  background: url(https://icons.iconarchive.com/icons/alecive/flatwoken/256/Apps-Google-Drive-Fusion-Tables-icon.png) no-repeat;
+  background-size: contain;
+  width: 38px;
+  height: 36px;
+  display: block;
+}
+
+.giuseart-nav ul>li a i.icon-phone-w {
+  background: url(https://icons.iconarchive.com/icons/awicons/vista-artistic/256/2-Hot-Home-icon.png) no-repeat;
+  background-size: contain;
+}
+
+.giuseart-nav ul li .button .btn_phone_txt {
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .giuseart-nav li .chat_animation {
+    display: block !Important
+  }
+
+  .giuseart-nav li .button .phone_animation {
+    box-shadow: none;
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #6cb917;
+    line-height: 15px;
+    border: 2px solid white;
+  }
+
+  .giuseart-nav ul>li a {
+    padding: 0;
+    margin: 0 auto
+  }
+
+  .giuseart-nav {
+    background: white;
+    width: 100%;
+    border-radius: 0;
+    color: #fff;
+    height: 60px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    padding: 5px;
+    margin: 0;
+    box-shadow: 0 4px 10px 0 #000;
+  }
+
+  .giuseart-nav li {
+    float: left;
+    width: 20%;
+    list-style: none;
+    height: 50px;
+  }
+
+  .phone-mobile {
+    display: block !important
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "site": "tsn-golf",
+    "source": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "frameworksBackend": {
+      "region": "asia-east1"
+    }
+  }
+}
+
+
+ firebase deploy --only hosting:tsn-golf
+ firebase deploy --only hosting:fir-1-81fde

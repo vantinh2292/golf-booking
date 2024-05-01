@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+}
+
+input[type="number"] {
+  text-align: center;
+}
+
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+} */
+
+
+/* input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  display: none;
+} */
+
+.none_button[type="number"]::-webkit-inner-spin-button,
+.none_button[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  display: none;
+  text-align: center;
+}
+
+.SelectTag {
+  width: 100%;
+  /* height: 12px !important;
+  min-height: 12px !important; */
+  text-align: center;
+  color: 'white' !important
+}

@@ -1,0 +1,48 @@
+.parent_divider {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.divider {
+    border-bottom: 1px solid #3d4658;
+    /* Set border color */
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width: 100%;
+}
+
+.FormInput {
+    background-color: transparent;
+    color: rgb(235, 235, 229);
+    border-color: #435b7d
+}
+
+.FormInput option {
+    background: #082F49;
+    border-radius: 3em !important;
+}
+
+.FormInput:after {
+    color: rgb(235, 235, 229);
+}
+
+.FormInput::placeholder {
+    color: rgb(98, 99, 100);
+}
+
+.FormInput:not(active) {
+    color: rgb(235, 235, 229);
+}
+
+.FormInput:focus {
+    border-color: #6668 !important;
+    outline: 0;
+    box-shadow: none !important;
+
+    background-color: #082F49
+}
+
+.FormInput>a::after {
+    color: red;
+}
